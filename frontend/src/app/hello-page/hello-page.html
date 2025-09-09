@@ -1,0 +1,8 @@
+<div class="container mt-55">
+  <h2>Welcome to Hello Page</h2>
+  <button class="btn btn-primary" (click)="callApi()">Call Spring Boot API</button>
+
+  <div *ngIf="response" class="alert alert-success mt-3">
+    {{ response }}
+  </div>
+</div>
