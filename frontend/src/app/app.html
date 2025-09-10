@@ -1,12 +1,16 @@
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand">
-  <img src="/images/Saint-Gobain_logo.svg.png" alt="Company Logo" class="d-inline-block align-text-top" style="height:40px;" />
-</a>
-    <form class="d-flex" role="search">
-      <button class="btn btn-outline-success" type="submit">Login</button>
-    </form>
+      <img src="/images/Saint-Gobain_logo.svg.png" alt="Company Logo" class="d-inline-block align-text-top" style="height:40px;" />
+    </a>
+    <div class="d-flex">
+     <button class="btn btn-outline-success" (click)="goToHelloPage()">
+  Login
+</button>
+
+    </div>
   </div>
 </nav>
 
+<!-- ✅ This is where the login form will be displayed -->
 <router-outlet></router-outlet>
